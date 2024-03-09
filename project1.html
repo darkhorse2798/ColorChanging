@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+  html {
+    margin: 0;
+  }
+  body{
+    background-color: #414141;
+  }
+  
+  span {
+    display: block;
+  }
+  .canvas {
+    margin: 100px auto 100px;
+    width: 80%;
+    text-align: center;
+  }
+  
+  .button {
+    width: 100px;
+    height: 100px;
+    border: solid black 2px;
+    display: inline-block;
+  }
+  
+  #grey {
+    background: grey;
+  }
+  
+  #blue {
+    background:blue;
+  }
+  #yellow {
+    background: yellow;
+  }
+  #pink {
+    background:pink;
+  }
+  #purple {
+    background:purple;
+  }
+    
+</style>
+<body>
+    <div class="canvas">
+        <h1>Color Scheme Changer</h1>
+        <span class="button" id="grey"></span>
+        <span class="button" id="blue"></span>
+        <span class="button" id="yellow"></span>
+        <span class="button" id="pink"></span>
+        <span class="button" id="purple"></span>
+        <h2>Changing the color of the body by clicking to the boxex</h2>
+    </div>
+</body>
+
+
+
+<script>
+  const buttons=document.querySelectorAll('.button');
+  const body=document.querySelector('body');
+
+  console.log(body.style.backgroundColor);
+  buttons.forEach((data)=>
+  {
+    data.addEventListener('click',(e)=>
+    {
+      if(e.target.id=="grey")
+      {
+         body.style.backgroundColor=e.target.id;
+      }
+      if(e.target.id=="blue")
+      {
+         body.style.backgroundColor=e.target.id;
+      }
+      if(e.target.id=="yellow")
+      {
+         body.style.backgroundColor=e.target.id;
+      }
+      if(e.target.id=="pink")
+      {
+         body.style.backgroundColor=e.target.id;
+      }
+      if(e.target.id=="purple")
+      {
+         body.style.backgroundColor=e.target.id;
+      }
+
+
+    })
+
+  }
+  )
+
+
+</script>
+    
+</html>
